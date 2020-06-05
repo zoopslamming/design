@@ -1,0 +1,180 @@
+* {box-sizing: border-box}
+
+/******TACO******/
+.taco-container {
+    position:absolute;
+    top:40px;
+    left:80px;
+    animation-name: taco-movement;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.taco-text{
+    position:absolute;
+    left:150px;
+    top:550px;;
+    font-family:"tahoma";
+}
+.taco-front,.taco-back{
+    position:absolute;
+    width:200px;
+    height:100px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    background-color:#e7af00;
+}
+.taco-front{
+    left:25px;
+}
+.lettuce{
+    position:absolute;
+    left:8px;
+    width:200px;
+    height:85px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 150px;
+    background-color:green;
+    margin-top:10px;
+}
+.tomato-1,.tomato-2{
+    position:absolute;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-color:red;
+}
+.tomato-1{
+    left:35px;
+    top:15px;
+}
+.tomato-2{
+    left:20px;
+    top:50px;
+}
+.cheese-1,.cheese-2,.cheese-3,.cheese-4{
+    position:absolute;
+    background-color:orange;
+    height:20px;
+    width:5px;
+}
+.cheese-1{
+    transform: rotate(2deg);
+    top:5px;
+    left:50px;
+}
+.cheese-2{
+    transform: rotate(-30deg);
+    top:25px;
+    left:40px;
+}
+.cheese-3{
+    transform: rotate(-50deg);
+    top:50px;
+    left:20px;
+}
+.cheese-4{
+    transform: rotate(50deg);
+    top:75px;
+    left:20px;
+}
+.eye-left,.eye-right{
+    position:absolute;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    top:59px;
+    background-color:black;
+}
+.eye-left{
+    left:100px
+}
+.eye-right{
+    left:160px
+}
+.cheek-left,.cheek-right{
+    position:absolute;
+    width:20px;
+    height:5px;
+    border-radius:50%;
+    top:75px;
+    background-color:pink;
+}
+.cheek-left{
+    left:95px
+}
+.cheek-right{
+    left:155px
+}
+.mouth{
+    position:absolute;
+    left:123px;
+    top:65px;
+    border-bottom:solid 5px black;
+    border-left:solid 5px black;
+    border-right:solid 5px black;
+    height:12px;
+    width:25px;
+    border-bottom-left-radius:280px;
+    border-bottom-right-radius:280px;
+}
+.leg-left,.leg-right{
+    position:absolute;
+    top:100px;
+    border-left:solid 2px black;
+    height:50px;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.leg-left{
+    left:100px;
+    animation-name: leg-left-movement;
+}
+.leg-right{
+    left:165px;
+    animation-name: leg-right-movement;
+}
+.arm-left,.arm-right{
+    position:absolute;
+    border-left:solid 2px black;
+    height:45px;
+}
+.arm-left{
+    left:65px;
+    top:85px;
+    animation-name: arm-right-movement;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin:0% 5%;
+}
+.arm-right{
+    left:200px;
+    top:15px;
+    animation-name: arm-right-movement;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin:100% 100%;
+}
+@keyframes arm-right-movement {
+    from {transform: rotate(-30deg);}
+    to {transform: rotate(75deg);}
+}
+@keyframes arm-right-movement {
+    from {transform: rotate(80deg);}
+    to {transform: rotate(10deg);}
+}
+@keyframes leg-left-movement {
+    from {height:20px;}
+    to {height:50px;}
+}
+@keyframes leg-right-movement {
+    from {height:50px;}
+    to {height:20px;}
+}
+@keyframes taco-movement {
+    from {top:100px}
+    to {top:400px}
+}
