@@ -1,0 +1,48 @@
+.hand-container {
+  display:inline-block;
+  position:relative;
+  height:30px;
+}
+.hand * {
+  position:absolute;
+}
+.index-finger,.ring-finger,.pinky-finger,
+.middle-finger,.thumb,.palm{
+  border:solid 3px black;
+  height:18px;
+  width:4px;
+  border-radius: 10px 10px 0 0;
+}
+.index-finger,.ring-finger,.pinky-finger,
+.middle-finger{
+  border-bottom:none;
+}
+.thumb{
+  top:15px;
+  height:15px;
+  border-radius: 20px 10px 0 15px;
+  border-right:none;
+}
+.index-finger{
+  top:5px;
+  left:7px;
+}
+.middle-finger{
+  left:14px;
+}
+.ring-finger{
+  top:5px;
+  left:21px;
+}
+.pinky-finger{
+  top:8px;
+  left:28px;
+}
+.palm{
+  left:7px;
+  border-radius:0 0 10px 10px;
+  width:27px;
+  height:15px;
+  top:32px;
+  border-top:none;
+}
