@@ -2,56 +2,65 @@
 <html>
 <head>
     <title>Icons</title>
-    <link rel="stylesheet" type="text/css" href="css/db-cannister.css">
-    <link rel="stylesheet" type="text/css" href="css/email.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/general.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/db-cannister.css">
+    <link rel="stylesheet" type="text/css" href="css/email.css">
     <link rel="stylesheet" type="text/css" href="css/hand.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css">
 </head>
-    <body>
-          <h1 class="col12">Icons Made with CSS and HTML</h1>
-          <div class="col3">
-              <div class="db-cannister-container">
-                <div class="db-cannister-holder">
-                  <div class="db-cannister">
-                      <div class="stripe-5"></div>
-                      <div class="stripe-4"></div>
-                      <div class="stripe-3"></div>
-                      <div class="stripe-2"></div>
-                      <div class="stripe-1"></div>
-                  </div>
+  <body>
+    <div class="col12" id="topNavigation"></div>
+    <h1 class="col12">Icons Made with CSS and HTML</h1>
+    <div class="col3">
+        <div class="db-cannister-container">
+          <div class="db-cannister-holder">
+            <div class="db-cannister">
+                <div class="stripe-5"></div>
+                <div class="stripe-4"></div>
+                <div class="stripe-3"></div>
+                <div class="stripe-2"></div>
+                <div class="stripe-1"></div>
+            </div>
+          </div>
+        </div>
+        <p>Database Cannister</p>
+    </div>
+    <div class="col3">
+        <div class="email-container">
+            <div class="email">
+                <div class="envelope">
+                  <div class="left-angle"></div>
+                  <div class="right-angle"></div>
                 </div>
+            </div>
+        </div>
+        <p>Email</p>
+    </div>
+    <div class="col3">
+        <div class="hand-container">
+            <div class="hand">
+              <div class="thumb">
+                  <div class="thumb-digit"></div>
+                  <div class="thumb-palm"></div>
               </div>
-              <p>Database Cannister</p>
-          </div>
-          <div class="col3">
-              <div class="email-container">
-                  <div class="email">
-                      <div class="envelope">
-                        <div class="left-angle"></div>
-                        <div class="right-angle"></div>
-                      </div>
-                  </div>
+              <div class="fingers">
+                  <div class="pinky-finger"></div>
+                  <div class="ring-finger"></div>
+                  <div class="middle-finger"></div>
+                  <div class="index-finger"></div>
+                  <div class="palm"></div>
               </div>
-              <p>Email</p>
-          </div>
-          <div class="col3">
-              <div class="hand-container">
-                  <div class="hand">
-                    <div class="thumb">
-                        <div class="thumb-digit"></div>
-                        <div class="thumb-palm"></div>
-                    </div>
-                    <div class="fingers">
-                        <div class="pinky-finger"></div>
-                        <div class="ring-finger"></div>
-                        <div class="middle-finger"></div>
-                        <div class="index-finger"></div>
-                        <div class="palm"></div>
-                    </div>
-                  </div>
-              </div>
-              <p>Hand</p>
-          </div>
-    </body>
+            </div>
+        </div>
+        <p>Hand</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script src="js/script.js"></script>
+    <script>
+      addTopNavigation("Icons");
+    </script>
+  </body>
 </html>

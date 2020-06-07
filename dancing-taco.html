@@ -2,14 +2,15 @@
 <html>
 <head>
     <title>Page Title</title>
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/taco.css">
-    <link rel="stylesheet" type="text/css" href="css/db-cannister.css">
-    <link rel="stylesheet" type="text/css" href="css/email.css">
 </head>
     <body>
+      <div class="col12" id="topNavigation"></div>
       <div class="col12">
         <div class="taco-holder">
-        <section class="taco-container">
+        <section class="taco-box">
             <div class="taco-back"></div>
 
             <div class="lettuce"></div>
@@ -38,5 +39,11 @@
         </section>
       </div>
       </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+      </script>
+      <script src="js/script.js"></script>
+      <script>
+        addTopNavigation("Dancing Taco");
+      </script>
     </body>
 </html>
