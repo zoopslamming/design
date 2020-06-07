@@ -1,6 +1,9 @@
 * {box-sizing: border-box}
 
 /******TACO******/
+.taco-holder{
+  display:inline-block;
+}
 .taco-container {
     position:absolute;
     top:40px;

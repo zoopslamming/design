@@ -8,12 +8,12 @@ body{margin:0px;}
 	text-align:left;
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 400px) {
 	.col1,.col2,.col3,.col4{
 		width:calc(50% - 20px);}
 	main,header{margin:auto}
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 800px) {
 	.col1{width:calc(8.3% - 20px);}
 	.col2{width:calc(16.6% - 20px);}
 	.col3{width:calc(25% - 20px);}
