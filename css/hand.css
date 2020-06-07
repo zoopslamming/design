@@ -1,48 +1,85 @@
 .hand-container {
   display:inline-block;
   position:relative;
-  height:30px;
 }
-.hand * {
+.hand{
+  position:relative;
+  height:50px;
+  width:30px;
+}
+.fingers{
+  height:55%;
+  width:80%;
+  margin-left:12%;
+}
+.fingers > *, .palm, .thumb, .thumb > * {
   position:absolute;
 }
 .index-finger,.ring-finger,.pinky-finger,
-.middle-finger,.thumb,.palm{
+.middle-finger,.thumb-digit,.thumb-palm,.palm{
   border:solid 3px black;
-  height:18px;
-  width:4px;
-  border-radius: 10px 10px 0 0;
+  width:10%;
+  border-radius: 80px 80px 0 0;
+  background-color:none;
+  float:left;
 }
-.index-finger,.ring-finger,.pinky-finger,
-.middle-finger{
+.index-finger,.ring-finger,
+.pinky-finger,.middle-finger{
   border-bottom:none;
+  height:80%
 }
 .thumb{
-  top:15px;
-  height:15px;
-  border-radius: 20px 10px 0 15px;
+  transform-origin: bottom right;
+  transform:rotate(-30deg);
+  width:40%;
+  height:80%;
+  left:5%;
+}
+.thumb-digit{
+  top:47%;
+  height:17%;
+  width:30%;
+  background-color: white;
+  border-bottom:none;
+  border-radius:100px 100px 30px 90px;
+  z-index: 100;
+}
+.thumb-palm{
+  top:65%;
+  height:35%;
+  width:90%;
+  border-radius:30% 40px 40px 90px;
   border-right:none;
+  background-color: white;
 }
 .index-finger{
-  top:5px;
-  left:7px;
+  margin-left:0%;
+  margin-top:5%;
+  border-right-color:white;
+  z-index: -100;
 }
 .middle-finger{
-  left:14px;
+  margin-left:20%;
+  height:44%
 }
 .ring-finger{
-  top:5px;
-  left:21px;
+  margin-top:10%;
+  margin-left:40%;
+  height:40%;
 }
 .pinky-finger{
-  top:8px;
-  left:28px;
+  margin-left:60%;
+  margin-top:20%;
+  height:50%;
+  border-left-color:white;
 }
 .palm{
-  left:7px;
-  border-radius:0 0 10px 10px;
-  width:27px;
-  height:15px;
-  top:32px;
+  position:absolute;
+  top:65%;
+  left:12%;
+  border-radius:0 0 50px 50px;
+  width:70%;
+  height:25%;
   border-top:none;
+  z-index: -4;
 }

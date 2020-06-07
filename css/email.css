@@ -2,7 +2,10 @@
   display:inline-block;
   height:25px;
 }
-.email * {
+.email {
+  position:relative;
+}
+.envelope * {
   position:absolute;
 }
 .envelope{
@@ -15,15 +18,16 @@
 .left-angle,.right-angle{
     background-color:black;
     width:4px;
-    height:23px;
+    height:27px;
     border-radius:10px;
 }
 .right-angle {
-    left:32px;
+    left:38px;
     transform:rotate(52deg);
     transform-origin: top right;
 }
 .left-angle {
+    left:0px;
     transform:rotate(-52deg);
     transform-origin: top left;
 }

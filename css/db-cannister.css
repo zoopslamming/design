@@ -2,8 +2,15 @@
   display:inline-block;
   height:33px;
 }
-.db-cannister > * {
+.db-cannister-holder {
+  position:relative;
+}
+.db-cannister * {
   position:absolute;
+}
+.db-cannister {
+    height:19px;
+    width:40px;
 }
 .db-cannister > div{
     height:19px;
@@ -20,14 +27,14 @@
     background-color:white;
 }
 .db-cannister .stripe-2 {
-    top:12px;
+    top:3px;
 }
 .db-cannister .stripe-3 {
-    top:20px;
+    top:13px;
 }
 .db-cannister .stripe-4 {
-    top:24px;
+    top:17px;
 }
 .db-cannister .stripe-5 {
-    top:33px;
+    top:26px;
 }
