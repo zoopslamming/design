@@ -2,7 +2,7 @@ function addTopNavigation(page){
   var outputHTML = "";
 
   outputHTML +=
-    "<a href='/'>Home</a> / " + page;
+    "<a href='index.html'>Home</a> / " + page;
 
   $("#topNavigation").html(outputHTML);
 }
